@@ -7,13 +7,21 @@ This is for how to build rqlite from vendor and all of the dependencies that it 
 From rqlite.io website on how to build from source: 
 
 mkdir rqlite # Or any directory of your choice.
+
 cd rqlite/
+
 export GOPATH=$PWD
+
 mkdir -p src/github.com/rqlite
+
 cd src/github.com/rqlite
+
 git clone https://github.com/rqlite/rqlite.git
+
 cd rqlite
+
 go install ./...
+
 $GOPATH/bin/rqlited ~/node.1
 
 To download all the dependencies into the vendor directory: 
